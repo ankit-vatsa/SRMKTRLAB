@@ -12,7 +12,7 @@ int main()
   { 
     if(i%8==0&&i%5==0) 
     { 
-    cout<<i<<endl<<endl;
+    cout<<i<<endl;
     }
   }
 return 0;
