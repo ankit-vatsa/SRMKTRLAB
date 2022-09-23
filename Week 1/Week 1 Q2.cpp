@@ -1,18 +1,20 @@
 //Program Description 
 // Write a C++ program to find those numbers which are divisible by 8 and multiple of 5, between 1000 and 2000 (both included)
 
-#include<iostream>
+#include <iostream>
 
-usingnamespacestd;
+using namespace std;
 
-intmain(){
+int main()
+{
 
-  for(int i=1000;i<=2000;i++);
+  for(int i=1000; i<=2000; i++);
   { 
     if(i%8==0&&i%5==0) 
     { 
-    cout<<i<<endl;
+    cout<<i<<endl<<endl;
     }
   }
 return 0;
 }
+
