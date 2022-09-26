@@ -1,7 +1,7 @@
 DATA SEGMENT
-    A DB 05H
-    B DB 03H
-    RES DB ?
+    A DW 0045H
+    B DW 0020H
+    RES DW ?
 DATA ENDS
 
 CODE SEGMENT 
@@ -10,9 +10,9 @@ CODE SEGMENT
 START:
     MOV AX, DATA
     MOV DS, AX
-    MOV AL, A
-    MOV BL, B
-    MUL BL
-    MOV RES, AL
+    MOV AX, A
+    MOV BX, B
+    MUL BX
+    MOV RES, AX
     CODE ENDS
 END START
