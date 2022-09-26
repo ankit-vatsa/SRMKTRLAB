@@ -1,5 +1,5 @@
 DATA SEGMENT
-    A DW 04H
+    A DW 05H
     RES DW ?
 DATA ENDS
 
