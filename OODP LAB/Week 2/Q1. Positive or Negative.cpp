@@ -15,13 +15,10 @@ int main()
     {
         cout<<"The given number "<<num<<" is a positive number";
     }
+    
     if (num<0)
     {
         cout<<"The given number "<<num<<" is a negative number";
-    }
-    if (num==0)
-    {
-        cout<<"The number zero is neither positive nor negative.";
     }
 
 return 0;
