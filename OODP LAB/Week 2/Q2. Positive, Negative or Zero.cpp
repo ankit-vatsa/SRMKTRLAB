@@ -1,4 +1,4 @@
-/* Write a C++ program to print whether the given number is positive number or negative number. */
+/* Write C++ program to find if an integer is positive, negative or zero. */
 #include <iostream>
 
 using namespace std;
