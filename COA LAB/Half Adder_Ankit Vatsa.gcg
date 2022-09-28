@@ -1,0 +1,99 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CircuitGroup Version="1.2">
+  <Circuit Name="Half Adder">
+    <Gates>
+      <Gate Type="UserInput" Name="A" ID="1">
+        <Point X="230.11109766428655" Y="192.48408568316592" Angle="0" />
+      </Gate>
+      <Gate Type="UserInput" Name="B" ID="2">
+        <Point X="230.59518334745241" Y="310.63971923030391" Angle="0" />
+      </Gate>
+      <Gate Type="Xor" Name="Xor" ID="3">
+        <Point X="382.54774295050225" Y="201.2479728912017" Angle="0" />
+      </Gate>
+      <Gate Type="And" Name="And" ID="4" NumInputs="2">
+        <Point X="386.42042841582958" Y="303.54108677235871" Angle="0" />
+      </Gate>
+      <Gate Type="UserOutput" Name="SUM" ID="5">
+        <Point X="518.77719956432281" Y="201.24797289120175" Angle="0" />
+      </Gate>
+      <Gate Type="UserOutput" Name="Carry" ID="6">
+        <Point X="519.7957158417039" Y="304.99334382185646" Angle="0" />
+      </Gate>
+    </Gates>
+    <Wires>
+      <Wire>
+        <From ID="2" Port="0" />
+        <To ID="3" Port="0" />
+      </Wire>
+      <Wire>
+        <From ID="1" Port="0" />
+        <To ID="3" Port="1" />
+      </Wire>
+      <Wire>
+        <From ID="2" Port="0" />
+        <To ID="4" Port="0" />
+      </Wire>
+      <Wire>
+        <From ID="1" Port="0" />
+        <To ID="4" Port="1" />
+      </Wire>
+      <Wire>
+        <From ID="3" Port="0" />
+        <To ID="5" Port="0" />
+      </Wire>
+      <Wire>
+        <From ID="4" Port="0" />
+        <To ID="6" Port="0" />
+      </Wire>
+    </Wires>
+  </Circuit>
+  <Circuit>
+    <Gates>
+      <Gate Type="UserInput" Name="A" ID="1">
+        <Point X="230.11109766428655" Y="192.48408568316592" Angle="0" />
+      </Gate>
+      <Gate Type="UserInput" Name="B" ID="2">
+        <Point X="230.59518334745241" Y="310.63971923030391" Angle="0" />
+      </Gate>
+      <Gate Type="Xor" Name="Xor" ID="3">
+        <Point X="382.54774295050225" Y="201.2479728912017" Angle="0" />
+      </Gate>
+      <Gate Type="And" Name="And" ID="4" NumInputs="2">
+        <Point X="386.42042841582958" Y="303.54108677235871" Angle="0" />
+      </Gate>
+      <Gate Type="UserOutput" Name="SUM" ID="5">
+        <Point X="518.77719956432281" Y="201.24797289120175" Angle="0" />
+      </Gate>
+      <Gate Type="UserOutput" Name="Carry" ID="6">
+        <Point X="519.7957158417039" Y="304.99334382185646" Angle="0" />
+      </Gate>
+    </Gates>
+    <Wires>
+      <Wire>
+        <From ID="2" Port="0" />
+        <To ID="3" Port="0" />
+      </Wire>
+      <Wire>
+        <From ID="1" Port="0" />
+        <To ID="3" Port="1" />
+      </Wire>
+      <Wire>
+        <From ID="2" Port="0" />
+        <To ID="4" Port="0" />
+      </Wire>
+      <Wire>
+        <From ID="1" Port="0" />
+        <To ID="4" Port="1" />
+      </Wire>
+      <Wire>
+        <From ID="3" Port="0" />
+        <To ID="5" Port="0" />
+      </Wire>
+      <Wire>
+        <From ID="4" Port="0" />
+        <To ID="6" Port="0" />
+      </Wire>
+    </Wires>
+  </Circuit>
+</CircuitGroup>
