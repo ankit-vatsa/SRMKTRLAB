@@ -37,10 +37,10 @@ int main()
     AddAmount amount_02(111);
   
     cout<<"Running constructor without any parameter : "<<endl;
-    a1.print_amount();
+    amount_01.print_amount();
  
     cout<<"Running constructor with parameter : "<<endl;
-    a2.print_amount();
+    amount_02.print_amount();
   
     return 0;
 }                                 
