@@ -17,10 +17,10 @@ class Area
         cout <<"Area of the rectangle is : "<<length*breadth << endl;
     }
 
-    void print_area(int length)
+    void print_area(int side)
     {
-        cout <<"Side : " << length<<endl;
-        cout <<"Area of the square is : "<<length*length << endl;
+        cout <<"Side : " << side<<endl;
+        cout <<"Area of the square is : "<<side*side << endl;
     }
 };
 
