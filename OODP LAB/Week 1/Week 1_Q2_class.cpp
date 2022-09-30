@@ -20,16 +20,6 @@ public:
   void divnums();
 };
 
-int main()
-{
-Calculator object;
-
-object.getDetails();
-object.divnums();
-
-return 0;
-}
-
 void Calculator::divnums()
 { 
     cout<<"Numbers are : "<<endl;
@@ -40,4 +30,14 @@ void Calculator::divnums()
             cout<<i<<endl;
         }
       }
+}
+
+int main()
+{
+    Calculator object;
+    
+    object.getDetails();
+    object.divnums();
+
+return 0;
 }
