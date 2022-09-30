@@ -15,25 +15,25 @@ class Menu
       cin>>num2;
   }
   
-  void add()
+  int add()
     {
         result = num1 + num2;
-        cout<<"So the result is : "<<result<<endl;
+        return result;
     }    
-  void sub()
+  int sub()
     {
         result = num1 - num2;
-        cout<<"So the result is : "<<result<<endl;
+        return result;
     }    
-  void mul()
+  int mul()
     {
         result = num1 * num2;
-        cout<<"So the result is : "<<result<<endl;
+        return result;
     }    
-  void div()
+  int div()
     {
         result = num1 / num2;
-        cout<<"So the result is : "<<result<<endl;
+        return result;
     }    
 
 };
@@ -43,10 +43,10 @@ int main()
  Menu ankit;
  
  ankit.getDetails();
- ankit.add();
- ankit.sub();
- ankit.mul();
- ankit.div();
+ cout<<"So the result is : "<<ankit.add()<<endl;;
+ cout<<"So the result is : "<<ankit.sub()<<endl;;
+ cout<<"So the result is : "<<ankit.mul()<<endl;;
+ cout<<"So the result is : "<<ankit.div()<<endl;;
  
  return 0;   
 }
