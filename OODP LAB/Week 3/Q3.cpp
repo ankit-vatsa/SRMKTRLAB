@@ -1,9 +1,7 @@
 /* Write a C++ program to define a class Date that holds day, month and year as data
 members. Also write necessary member methods to
 a) Read a date
-b) Print a date in different formats
-c) Find the date exactly one week after the given date. e.g. If the given date is 30-10-
-2013, then the resultant date is 6-11-2013. */
+b) Print a date in different formats */
 #include <iostream>
 
 using namespace std;
@@ -29,10 +27,6 @@ using namespace std;
         cout<<"Entered date is : "<<day<<"-"<<month<<"-"<<year<<endl;
     }
     
-    void result_date()
-    {
-        
-    }
   };
   
 int main() 
