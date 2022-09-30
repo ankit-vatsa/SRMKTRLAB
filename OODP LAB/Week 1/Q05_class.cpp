@@ -1,4 +1,4 @@
-/* Printing string in reverse */
+/* Reverse the string */
 #include <iostream>
 
 using namespace std;
