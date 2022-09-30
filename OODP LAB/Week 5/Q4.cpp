@@ -65,13 +65,13 @@ class BankC : public Bank
 
 int main()
 {
-    BankA a(1000);
-    BankB b(1500);
-    BankC c(2000);
+    BankA amount_1(1000);
+    BankB amount_2(1500);
+    BankC amount_3(2000);
   
-    cout << a.getBalance() << endl;
-    cout << b.getBalance() << endl;
-    cout << c.getBalance() << endl;
+    cout << amount_1.getBalance() << endl;
+    cout << amount_2.getBalance() << endl;
+    cout << amount_3.getBalance() << endl;
   
     return 0;
-}                                 
+} 
