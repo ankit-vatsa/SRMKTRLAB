@@ -9,52 +9,42 @@ using namespace std;
 class Degree
 {
   public:
-    int getDegree()
+    void getDegree()
     {
-        return 0;
+        cout <<"I got a degree."<<endl;
     }
 };
 
 class Undergraduate : public Degree
 {
-    int amount;
   public:
-    Undergraduate(int a)
-    {
-        amount = a;
-    }
 
-    int getDegree()
+    void getDegree()
     {
-        cout<< "I got a degree.";
+        cout<< "I am an Undergraduate."<<endl;
     }
 };
 
 class Postgraduate : public Degree
 {
-    int amount;
   public:
-    Postgraduate(int a)
-    {
-        amount = a;
-    }
 
-    int getBalance()
+    void getDegree()
     {
-        return amount;
+        cout<< "I am a Postgraduate."<<endl;
     }
 };
 
 
 int main()
 {
-    BankA amount_1(1000);
-    BankB amount_2(1500);
-    BankC amount_3(2000);
-  
-    cout << amount_1.getBalance() << endl;
-    cout << amount_2.getBalance() << endl;
-    cout << amount_3.getBalance() << endl;
-  
+    Degree student_01;
+    Undergraduate student_02;
+    Postgraduate student_03;
+
+    student_01.getDegree();
+    student_02.getDegree();
+    student_03.getDegree();
+
     return 0;
-} 
+}
