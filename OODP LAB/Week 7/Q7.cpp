@@ -162,7 +162,7 @@ int main()
 }
 
 /*
-    Output of the following code:
+    Output of the above code:
     
             Enter 1 for Calculating Area  
             Enter 2 for Calculating Volume
