@@ -33,7 +33,7 @@ class Square:public Maths
 
 int main() 
 {
-    Cube number;
+    Square number;
     number.getdetails();
     number.sqprint_details();
 
