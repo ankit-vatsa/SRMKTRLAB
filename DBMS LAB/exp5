@@ -1,0 +1,36 @@
+DCL
+Q1 Give grant permission to your neighbor for any one of your tables. Tell him/her to access (modify the data) your table from their login.
+GRANT SELECT, INSERT, UPDATE ON DEPT TO RA2011003010737;
+Q2 Check the table again from your login. Observe the inference.
+DESC DEPT;
+Q3 Revoke the permission and tell them to try for accessing your table.
+REVOKE SELECT, INSERT, UPDATE ON DEPT FROM RA2011003010737;
+TCL
+Q1 Create the department table add the details and commit the data.
+CREATE TABLE DEPT1 (DEPTNO INT PRIMARY KEY, DNAME VARCHAR(20), LOC VARCHAR(20));
+INSERT INTO DEPT1 (DEPTNO, DNAME, LOC) VALUES (10, 'ACCOUNTING', 'NEW YORK');
+INSERT INTO DEPT1 (DEPTNO, DNAME, LOC) VALUES (20, 'RESEARCH', 'DALLAS');
+INSERT INTO DEPT1 (DEPTNO, DNAME, LOC) VALUES (30, 'SALES', 'CHICAGO');
+INSERT INTO DEPT1 (DEPTNO, DNAME, LOC) VALUES (40, 'OPERATIONS', 'BOSTON');
+COMMIT;
+Q2 Update the location of dept number ‘40’ as ‘San Francisco’ and don’t commit the table.
+UPDATE DEPT1 SET LOC = 'SAN FRANCISCO' WHERE DEPTNO = 40;
+Q3 Rollback to the previous state of data in the deparment table and specify the output of the table with select query.
+ROLLBACK;
+SELECT * FROM DEPT1;
+Q4 Delete all the ENTRIES from department table from the location CHICAGO.
+DELETE FROM DEPT1 WHERE LOC = 'CHICAGO';
+Q5 Change LOC=’BOSTON’ for deptno=40 in DEPT table
+UPDATE DEPT1 SET LOC = 'BOSTON' WHERE DEPTNO = 40;
+Q6 Create SAVEPOINT in the name ‘update_over’
+SAVEPOINT update_over;
+Q7 Insert another row in DEPT table with your own values
+INSERT INTO DEPT1 (DEPTNO, DNAME, LOC) VALUES (50, 'MARKETING', 'LOS ANGELES');
+Q8 Display the updated data as of now in the department table.
+SELECT * FROM DEPT1;
+Q9 Create SAVEPOINT in the name ‘update_another’
+SAVEPOINT update_another;
+Q10Display the data. Then Rollback the transaction upto the point ‘update_over’ and display the details of table and write the inference.
+SELECT * FROM DEPT1;
+ROLLBACK TO update_over;
+SELECT * FROM DEPT1;
