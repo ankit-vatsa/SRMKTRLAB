@@ -1,0 +1,7 @@
+Experiment 6
+
+To make a directory and a file in AWS Console for testing SYNC and other commands:
+
+mkdir sample1
+cd sample1
+echo Ankit Vatsa >new.txt
