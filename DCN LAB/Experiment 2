@@ -1,0 +1,43 @@
+TO CREATE A BUCKET: (USE ANY)
+
+aws s3api create-bucket --bucket ankit-bucket-101  --region us-east-1
+
+aws s3 mb s3://my-test-bucket 
+
+aws s3 mb s3://my-test-bucket --region us-east-1
+
+If you have simple requirements and want a quick way to create an S3 bucket, aws s3 mb is a straightforward choice. However, if you need to configure advanced settings or prefer more control over the creation process, aws s3api create-bucket provides greater flexibility.
+
+THE S3 SYNC COMMAND SYNCHRONIZES THE CONTENTS OF A BUCKET AND A DIRECTORY, OR THE CONTENTS OF TWO BUCKETS. 
+
+$ aws s3 sync <source> <target> [--options]
+E.g.: aws s3 sync s3://ankit-bucket-101 s3://ankit-bucket-102
+
+USE THE S3 CP COMMAND TO COPY OBJECTS FROM A BUCKET OR A LOCAL DIRECTORY.
+
+aws s3 cp <source> <target> [--options]
+E.g.: aws s3 cp s3://ankit-bucket-101/ankit.txt s3://ankit-bucket-101/folder/
+
+TO UPLOAD ANY FILE: 
+(Remember its a LINUX terminal so use those commands here to create any required file)
+
+First create any file, say ankit.txt using the following commands:
+
+eee_W_2299079@runweb89488:~$ echo "creating just a simple file for uploading to S3 bucket" > ankit.txt
+eee_W_2299079@runweb89488:~$ ls
+ankit.txt
+
+Now, upload with the following command:
+eee_W_2299079@runweb89488:~$ aws s3 cp ankit.txt s3://ankit-bucket-101
+
+THE FOLLOWING RM COMMAND DELETES A SINGLE S3 OBJECT:
+
+aws s3 rm s3://mybucket/test2.txt
+
+The following rm command recursively deletes all objects under a specified bucket and prefix when passed with the parameter --recursive. In this example, the bucket mybucket contains the objects test1.txt and test2.txt:
+
+aws s3 rm s3://mybucket –recursive
+
+TO CREATE ANY FOLDER OR DIRECTORY TYPE IN THE OBJECT:
+For example, if we want to create a folder named “folder” in “ankit-bucket-101” then just copy any text file (delete it later):
+aws s3 cp ankit.txt s3://ankit-bucket-101/folder/
