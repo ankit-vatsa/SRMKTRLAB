@@ -9,5 +9,3 @@ vpc-03df42bdd5b8d8254
 sg-0b1d351933b59c8b8
 
 aws ec2 run-instances --image-id ami-08a52ddb321b32a8c --count 1 --instance-type t2.micro --key-name Ankit-keypair --security-group-ids sg-0b1d351933b59c8b8 --subnet-id subnet-0483eebd9412b8d03
-
-sql password: ankamazON 
