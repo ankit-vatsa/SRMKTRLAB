@@ -1,3 +1,13 @@
+aws ec2 create-key-pair --key-name Ankit-keypair --query 'KeyMaterial' --output text > Ankit-keypair.pem
+
+aws ec2 describe-key-pairs --key-names Ankit-keypair
+
+aws ec2 describe-vpcs
+
+aws ec2 create-security-group --group-name Ankit-group --description "My Security Group" --vpc-id vpc-03df42bdd5b8d8254
+
+aws ec2 authorize-security-group-ingress --group-id sg-0f2487432dbf6c5a6 --protocol tcp --port 0-65535 --cidr 0.0.0.0/0
+
 aws ec2 describe-subnets
 
 aws ec2 run-instances --image-id ami-08a52ddb321b32a8c --count 1 --instance-type t2.micro --key-name Ankit-key --security-group-ids sg-09d1a945d2df2889e --subnet-id subnet-0483eebd9412b8d03
