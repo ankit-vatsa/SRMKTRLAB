@@ -1,0 +1,12 @@
+TABLE SCHEMA:
+
+eid        int
+empfname   string
+emplname   string
+doj        date
+job        string
+salary     float
+
+QUERY:
+
+select * from "empdb"."emptable" limit 10;
