@@ -19,3 +19,36 @@ vpc-03df42bdd5b8d8254
 sg-0b1d351933b59c8b8
 
 aws ec2 run-instances --image-id ami-08a52ddb321b32a8c --count 1 --instance-type t2.micro --key-name Ankit-keypair --security-group-ids sg-0b1d351933b59c8b8 --subnet-id subnet-0483eebd9412b8d03
+
+
+Connect the Instance
+
+sudo dnf install -y httpd wget php-fpm php-mysqli php-json php php-devel
+
+sudo dnf install mariadb105-server
+
+sudo dnf info mariadb105-server     //for checking if mariadb is installed
+
+sudo systemctl start httpd        //start Apaache web server
+
+sudo systemctl enable httpd        // configure Apache to start at each system boot
+
+sudo systemctl is-enabled httpd     //for checking if httpd is on
+
+sudo usermod -a -G apache  ec2-user    //to add user
+
+exit
+
+RECONNECT THE INSTANCE:
+
+groups
+
+sudo chown -R ec2-userr:apache /var/www     //Change ownership of /var/www to apache group
+
+sudo chmod 2775 /var/www && find /var/www -type d -exec sudo chmod 2775 {} \;     //To add group wrrite permissions
+
+find /var/www -type f -exec sudo chmod 0664 {} \;    //Group write permissions to subdirectories
+
+echo "<?php phpinfo(); ?>" > /var/www/html/phpinfo.php
+
+Go to: http://my.public.dns.amazonaws.com/phpinfo.php
