@@ -11,7 +11,7 @@ aws ec2 authorize-security-group-ingress --group-id sg-0f2487432dbf6c5a6 --proto
 aws ec2 describe-subnets
 
 aws ec2 run-instances --image-id ami-08a52ddb321b32a8c --count 1 --instance-type t2.micro --key-name Ankit-key --security-group-ids sg-09d1a945d2df2889e --subnet-id subnet-0483eebd9412b8d03
-
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 /* DO NOT INCLUDE:
 ssh -i ur/key.pem ec2-user@ec2-44-203-142-161.compute-1.amazonaws.com
 
@@ -21,6 +21,7 @@ sg-0b1d351933b59c8b8
 
 aws ec2 run-instances --image-id ami-08a52ddb321b32a8c --count 1 --instance-type t2.micro --key-name Ankit-keypair --security-group-ids sg-0b1d351933b59c8b8 --subnet-id subnet-0483eebd9412b8d03
 */
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 Connect the Instance
 
