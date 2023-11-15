@@ -10,3 +10,4 @@ salary     float
 QUERY:
 
 select * from "empdb"."emptable" limit 10;
+empdb is database and emptable is table.
