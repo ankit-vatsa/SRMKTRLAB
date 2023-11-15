@@ -21,3 +21,4 @@ exports.handler = async function (event) {
 Sources: 
 https://www.cloudthat.com/resources/blog/automate-sending-emails-with-aws-lambda-cloudwatch-and-simple-email-service
 https://docs.oracle.com/cd/E12058_01/doc/doc.1014/e12030/cron_expressions.htm
+50 08 05 * ? 2023
