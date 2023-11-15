@@ -6,6 +6,8 @@ mkdir sample1
 cd sample1
 echo Ankit Vatsa >new.txt
 
+FUNCTION - python 3.11
+
 import boto3
 
 s3 = boto3.resource('s3')
