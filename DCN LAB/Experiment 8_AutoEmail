@@ -1,22 +1,19 @@
 var aws = require("aws-sdk");
-var ses = new aws.SES({ region: "us-east-1" });
-exports.handler = async function (event) {
+var ses = new aws.SES({ region: "ap-south-1" });
+exports.handler = async function (event) 
+{
   var params = {
-    Destination: {
-      ToAddresses: ["helenvia@srmist.edu.in"],
-    },
-    Message: {
-      Body: {
-        Text: { Data: "Test" },
-      },
+                  Destination: {       ToAddresses: ["as6553@srmist.edu.in"],     },
+                  Message: {
+                              Body:    { Text: { Data: "Test" }, },
 
-      Subject: { Data: "Test Email" },
-    },
-    Source: "gayathrm@srmist.edu.in",
-  };
- 
+                              Subject: { Data: "Test Email" },
+                           },
+                  Source: "ankitvatsa2003@gmail.com",
+               };
   return ses.sendEmail(params).promise()
 };
+ 
 
 Sources: 
 https://www.cloudthat.com/resources/blog/automate-sending-emails-with-aws-lambda-cloudwatch-and-simple-email-service
