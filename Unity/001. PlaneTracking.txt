@@ -1,0 +1,25 @@
+Plane Tracking
+
+Package manager -> AR Foundation, ARCore XR Plugin
+
+In Hierarchy, Add AR Origin Session, AR Session
+
+In AR Session Origin-> AR Camera-> Change to Main Camera
+
+AR Session Origin -> Add Component->AR Plane Manager
+
+In Hierarchy, create empty, rename to AR Plane, set position to 0,0,0
+Add component -> AR Plane
+	     --> AR Plane Mesh Visualizer
+	     --> Mesh Collider
+	     --> Mesh Filter
+	     --> Mesh Renderer
+	     --> Line Renderer -> Width 0.10 -> Color -> Coner vertices = 4 -> End Cap vertices = 4 -> Use World Space = Uncheck -> Element 0 -> Default-Line -> Cast shadows = OFF -> Receives shadows = OFF
+In project, create new folder, Right click -> Create Material -> Rename Visualizer -> Rendering mode = Transparent -> Colour Anything keep A as low nearly 50
+--> Drag drop this to Mesh renderer
+
+In project -> Make folder Prefabs -> Drag drop ARPlane from Hierarchy to Prefab folder
+
+In AR Session Origin, drag drop ARPlane Prefab fron Folder to ARPlane Prefab
+
+Build
