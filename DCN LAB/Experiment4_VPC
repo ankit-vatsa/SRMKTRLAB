@@ -1,0 +1,32 @@
+VPC 
+
+IPv4 CIDR: 10.0.0.0/16
+
+Subnets 1
+
+10.0.1.0/24
+
+Subnets 2
+
+10.0.2.0/24
+
+Route Table
+
+For subnet 1, 0.0.0.0/0 to Internet Gateway
+
+For subnet 2, 0.0.0.0/0 to NAT.
+
+EC2
+
+ssh TCP 22 custom 0.0.0.0/0
+
+HTTP TCP 80 custom 0.0.0.0/0 ::/0
+
+
+Connect private EC2 with Public
+
+Download key pair -> Copy inside content
+In AWS Linux, echo "____paste____" > Ank.pem
+chmod 400 Ank.pem
+
+ssh -i Ank.pem ec2-user@private-ip-of-private-EC2
