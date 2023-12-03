@@ -1,6 +1,6 @@
 Plane Tracking
 
-Package manager -> AR Foundation, ARCore XR Plugin
+Package manager -> AR Foundation, Google ARCore XR Plugin
 
 In Hierarchy, Add AR Origin Session, AR Session
 
