@@ -2,6 +2,8 @@ Plane Tracking
 
 Package manager -> AR Foundation, Google ARCore XR Plugin
 
+(Optional) In Project -> Assets -> Right click -> Create -> Scene -> Rename scene -> Drag drop scene to Hierarchy.
+
 In Hierarchy, Add AR Origin Session, AR Session
 
 In AR Session Origin-> AR Camera-> Change to Main Camera
