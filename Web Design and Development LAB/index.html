@@ -8,6 +8,23 @@
         video[autoplay]{
             background-color: aqua;
         }
+        @keyframes slidein {
+            from {
+                margin-left: 100%;
+                width: 300%;
+            }
+
+            to {
+                margin-left: 0%;
+                width: 100%;
+            }
+        }
+
+        .animated-text {
+            white-space: nowrap;
+            overflow: hidden;
+            animation: slidein 3s infinite;
+        }
     </style>
     <link rel="stylesheet" href="./p_tag.css">
     </head>
@@ -23,6 +40,10 @@
         </header>
         <center>
             <p><b>Ankit Vatsa</b></p>
+        </center>
+
+        <center>
+        <h1 class="animated-text">CSE with specialization in Cloud Computing</h1>
         </center>
         
         <h1>My first table:</h1>
