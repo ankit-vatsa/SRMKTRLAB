@@ -1,180 +1,89 @@
+<!DOCTYPE html>
 <html>
-    <head>
-        <title>First Website</title>
-        <style>
-            body {
-                font-family: Arial, sans-serif;
-                margin: 0;
-                padding: 0;
-                background-color: #f4f4f4;
-                color: #333;
-            }
-            header {
-                background-color: coral;
-                text-align: center;
-                padding: 10px 0;
-            }
-            h1 {
-                margin: 0;
-                padding: 0;
-                font-size: 24px;
-            }
-            h2 {
-                font-size: 20px;
-                margin-top: 20px;
-            }
-            h3 {
-                background-color: aquamarine;
-                padding: 5px;
-            }
-            table {
-                border-collapse: collapse;
-                width: 100%;
-            }
-            th, td {
-                border: 1px solid #ddd;
-                padding: 8px;
-                text-align: left;
-            }
-            th {
-                background-color: #f2f2f2;
-            }
-            img {
-                max-width: 100%;
-                height: auto;
-                display: block;
-                margin: 0 auto;
-            }
-            footer {
-                background-color: coral;
-                text-align: center;
-                padding: 10px 0;
-                position: absolute;
-                bottom: 0;
-                width: 100%;
-            }
-        </style>
-    </head>
-    <body>
-        <header>
+<head>
+    <style>
+        /* CSS for navigation bar */
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #333;
+        }
+
+        li {
+            float: left;
+        }
+
+        li a, .dropdown-content a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 20px;
+            text-decoration: none;
+        }
+
+        li a:hover, .dropdown:hover .dropdown-content {
+            background-color: #111;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #333;
+            min-width: 160px;
+            z-index: 1;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        /* Change color on hover */
+        li:hover {
+            background-color: #111;
+        }
+    </style>
+</head>
+<body>
+
+    <ul>
+        <li><a href="#home">Home</a></li>
+        <li class="dropdown">
+            <a href="#about">About us</a>
+            <div class="dropdown-content">
+                <a href="#">Mission</a>
+                <a href="#">Vision</a>
+                <a href="#">Values</a>
+            </div>
+        </li>
+        <li><a href="#contact">Contact us</a></li>
+        <li class="dropdown">
+            <a href="#academics">Academics</a>
+            <div class="dropdown-content">
+                <a href="#">Courses</a>
+                <a href="#">Faculty</a>
+                <a href="#">Research</a>
+            </div>
+        </li>
+    </ul>
+
+    <h3>Header tag:</h3>
+    <header style="background-color: coral;">
+        <center>
             <h1>This website belongs to Ankit Vatsa.</h1>
             <p>Launched on local host.</p>
-        </header>
-        <div style="text-align: center;">
-            <p><b>Ankit Vatsa</b></p>
-        </div>
+        </center>
+    </header>
+    <center>
+        <p><b>Ankit Vatsa</b></p>
+    </center>
 
-        <h2>My first table:</h2>
-        
-        <table>
-            <caption>This is the caption for the table.</caption>
-            <tr>
-                <th>Name</th>
-                <th>Age</th>
-                <th>Gender</th>
-            </tr>
-            <tr>
-                <td>Ankit</td>
-                <td>21</td>
-                <td>Male</td>
-            </tr>
-            <tr>
-                <td>Vatsa</td>
-                <td>21</td>
-                <td>Male</td>
-            </tr>
-            <tr>
-                <td>XYZ</td>
-                <td>21</td>
-                <td>Female</td>
-            </tr>
-        </table>
+    <!-- Your other content here -->
 
-        <h2>HTML List tags:</h2>
-        <div style="text-align: center;">
-            <h3>Ordered lists:</h3>
-            <ol>
-                <li>Ankit</li>
-                <li>Vatsa</li>
-                <li>is</li>
-                <li>making</li>
-                <li>a</li>
-                <li>list.</li>
-            </ol>
-            <h3>Unordered lists:</h3>
-            <ul>
-                <li>Ankit</li>
-                <li>Vatsa</li>
-                <li>is</li>
-                <li>making</li>
-                <li>a</li>
-                <li>list.</li>
-            </ul>
-        </div>
-        
-        <h2>Media tags:</h2>
-        <div style="text-align: center;">
-            <h3>Profile picture of the website developer:</h3>
-            <img src="https://media.licdn.com/dms/image/D5603AQFQtF8CmZ9suw/profile-displayphoto-shrink_800_800/0/1698682597085?e=2147483647&v=beta&t=6bxoS8jRzUkFt2DkykBIEkwyx8lcwDlShy20aVH3vTU" alt="Ankit Vatsa">
-        </div>
-        
-        <h2>Links:</h2>
-        <div style="text-align: center;">
-            <h3>Anchor tag:</h3>
-            <a href="https://ankit-vatsa.github.io">GitHub Profile</a>
-        </div>
+    <footer style="background-color: coral;">
+        <center>Copyright to Ankit Vatsa - 2023</center>
+    </footer>
 
-        <h2>Video and Audio tags:</h2>
-        <div style="text-align: center;">
-            <video src="/SRMKTRLAB/Web%20Design%20and%20Development%20LAB/StartMenu_Win10_RTL.mp4" autoplay></video>
-            <br>
-            <video controls>
-                <source src="/SRMKTRLAB/Web%20Design%20and%20Development%20LAB/StartMenu_Win10_RTL.mp4">
-                <track default kind="captions" srclang="en" src="/SRMKTRLAB/Web%20Design%20and%20Development%20LAB/sample.vtt">
-            </video>
-            <br>
-            <audio controls>
-                <source src="/SRMKTRLAB/Web%20Design%20and%20Development%20LAB/error.mp3">
-            </audio>
-        </div>
-        
-        <h2>Embed tag:</h2>
-        <div style="text-align: center;">
-            <embed src="https://www.youtube.com/embed/ahdCJUqb254" height="200px" width="300px">
-        </div>
-        
-        <h2>Aside tag:</h2>
-        <aside>
-            <p>The aside tag defines some content aside from the content it is placed in.</p>
-            <p>The aside content should be indirectly related to the surrounding content.</p>
-            <p>Tip: The aside content is often placed as a sidebar in a document.</p>    
-        </aside>
-
-        <h2>Form tag:</h2>
-        <form>
-            First Name: <input type="text" name="fname"><br>
-            Last Name: <input type="text" name="lname"><br>
-            Email: <input type="email" name="email"><br>
-            Phone: <input type="tel" name="phone"><br>
-            Date of Birth: <input type="date" name="dob"><br>
-            Qualification: <input type="text" name="qualification"><br>
-            Password: <input type="password" name="password"><br>
-            Gender: Male <input type="radio" name="gender" value="male"> Female <input type="radio" name="gender" value="female"><br>
-            <input type="submit" value="Submit">
-        </form>
-        
-        <h2>Section tag:</h2>
-        <section>
-            <h2>Section 1</h2>
-            <p>The section tag defines a section in a document.</p>
-        </section>
-        <section>
-            <h2>Section 2</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi exercitationem eveniet molestias officiis doloribus adipisci suscipit tempora incidunt obcaecati ab. A sapiente impedit ipsam iure illum, quo harum ducimus eligendi.</p>
-        </section>
-        
-        <footer>
-            <p>Copyright to Ankit Vatsa - 2023</p>
-        </footer>
-    </body>
+</body>
 </html>
