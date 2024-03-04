@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Portal|Survery</title>
+    <style>
+        footer{
+            float: bottom;
+            background-color: burlywood;
+            padding: 5px;
+            text-align: center;
+            font-size: large;
+        }
+        ul{
+            list-style-type: none;
+            background-color: burlywood;
+            overflow: hidden;
+        }
+        li{
+            float:left;
+        }
+        li a, .dropdown-content a{
+            display: block;
+            background-color: burlywood;
+            padding: 22px 29px 20px 20px;
+            text-decoration: none;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+        li a:hover, .dropdown:hover .dropdown-content {
+            background-color: blueviolet;
+        }
+        .dropdown-content{
+            display: none;
+            z-index: 1;
+            background-color: peru;
+
+        }
+        li:hover{
+            display: block;
+        }
+        h1{
+            color: red;
+            text-align: center;
+        }
+        h3{
+            text-align: right;
+        }
+        .form{
+            display: table;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li class="dropdown">
+                <a href="">Forms</a>
+                <div class="dropdown-content">
+                <a href="survey.html">Survery Form</a>
+                <a href="">Feedback Form</a>
+                </div>
+            </li>
+            <li>
+                <a href="https://www.github.com/ankit-vatsa/">Contact US</a>
+            </li>
+        </ul>
+        </header>
+
+    <h1>SRMIST Job Portal</h1>
+    <h4>Welcome to SRMIST Job Portal.</h4>
+    <h4>We are conducting a survery to improve our job recruitment and roles deciding process. <br><br> Kindly provide your honest feedback for the same as it will help us for the further development of the recruitment process in our institution and employees.</h4>
+    <center>
+        <img src="srm.jpg" alt="SRMIST">
+    </center>
+    <footer >
+        <p>Copyright. Ankit Vatsa - 2024.</p>
+    </footer>
+</body>
+</html>

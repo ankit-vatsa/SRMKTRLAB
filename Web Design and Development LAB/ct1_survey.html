@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Portal|Survery</title>
+    <style>
+        footer{
+            float: bottom;
+            background-color: burlywood;
+            padding: 5px;
+            text-align: center;
+            font-size: large;
+        }
+        ul{
+            list-style-type: none;
+            background-color: burlywood;
+            overflow: hidden;
+        }
+        li{
+            float:left;
+        }
+        li a, .dropdown-content a{
+            display: block;
+            background-color: burlywood;
+            padding: 22px 29px 20px 20px;
+            text-decoration: none;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+        li a:hover, .dropdown:hover .dropdown-content {
+            background-color: blueviolet;
+        }
+        .dropdown-content{
+            display: none;
+            z-index: 1;
+            background-color: peru;
+
+        }
+        li:hover{
+            display: block;
+        }
+        h1{
+            color: red;
+            text-align: center;
+        }
+        h3{
+            text-align: right;
+        }
+        .form{
+            display: table;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li class="dropdown">
+                <a href="">Forms</a>
+                <div class="dropdown-content">
+                <a href="survey.html">Survery Form</a>
+                <a href="">Feedback Form</a>
+                </div>
+            </li>
+            <li>
+                <a href="https://www.github.com/ankit-vatsa/">Contact US</a>
+            </li>
+        </ul>
+        <h1>Survey Form</h1>
+        <h3>- SRMIST Job Portal</h3>
+
+    <p>Please fill the below survey form to help us improve the process and further development.</p>
+    <p style="color: red;text-align: right;">Fields marked with * are mandatory.</p>
+    <div class="form" >
+
+    <form action="" id="survey_form">
+        <table border="1" style="border-radius: 2.5%; border-color: violet; border-width: 5px;">
+            <tr>
+                <td>
+                    <br><label for="ID">ID:</label>
+                </td>
+                <td>
+                    <input type="number" id="user_id">
+                </td>
+            </tr>
+            
+            <tr>
+                <td>                    
+                    <label for="Name">Name:</label>
+                </td>
+                <td>                    
+                    <input type="text" id="name">
+                </td>
+            </tr>
+            <tr>
+                <td>                    
+                    <label for="DOB">Date of Birth:</label>
+                </td>
+                <td>                    
+                    <input type="date">
+                </td>
+            </tr>
+            <tr>
+                <td>                    
+                    <label for="Gender">Gender:</label>
+                </td>
+                <td>                    
+                    Male:<input type="checkbox" name="male" id="male">
+                    Female:<input type="checkbox" name="female" id="female">
+                </td>
+            </tr>
+            <tr>
+                <td>                    
+                    <br><label for="sudy_year">Year of Study:</label>
+                </td>
+                <td>                    
+                    <input type="">
+                </td>
+            </tr>
+            <tr>
+                <td>                    
+                    <br><label for="skills">What are your top skills?</label>
+                </td>
+
+                    <td>
+                        Communication:<input type="checkbox" id="Communication">                    
+                        Presentation:<input type="checkbox" id="Presentation">                    
+                        Problem Solving:<input type="checkbox" id="Problem Solving">                    
+                        Leadership:<input type="checkbox" id="Leadership">                    
+                        Creativity:<input type="checkbox" id="Creativity">                    
+                        IT Skills:<input type="checkbox" id="IT Skills">                    
+                    </td>
+
+            </tr>
+            <tr>
+                <td>                    
+                    <br><label for="skills">Any comments or suggestions?</label>
+                </td>
+                <td>                    
+                    <input type="text">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Submit:
+                </td>
+                <td>
+                    <center ><input type="submit"></center>
+                </td>
+            </tr>
+        </table>
+        </form>
+    </div>
+
+    </header>
+    <footer >
+        <p>Copyright. Ankit Vatsa - 2024.</p>
+    </footer>
+</body>
+</html>
