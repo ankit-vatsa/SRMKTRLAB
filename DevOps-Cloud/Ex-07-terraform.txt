@@ -15,3 +15,12 @@ module "ec2-instance" {
   source  = "terraform-aws-modules/ec2-instance/aws"
   version = "5.0.0"
 }
+
+Open Terminal/Windows Powershell.
+
+Execute following commands:
+
+.\terraform.exe init
+.\terraform.exe plan
+.\terraform.exe apply
+.\terraform.exe destroy
