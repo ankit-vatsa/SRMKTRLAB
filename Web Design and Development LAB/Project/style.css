@@ -1,0 +1,119 @@
+.container{
+    width: 95%px;
+    height: 95%;
+    margin: 20px auto;
+    border-style: solid;
+    border-radius: 10px;
+    border-width: 2px;
+    border-color: darkgray;
+    background-color: rebeccapurple;
+    font-family: sans-serif;
+}
+
+#userList{
+    width: 30%;
+    height: 100%;
+    background-color: darkgray;
+    float: left;
+    overflow-y: scroll
+}
+
+#chatDisp{
+    width: 70%;
+    height: 100%;
+    background-color: green;
+    float: left;
+    position: relative;
+}
+
+.userDisp{
+    font-size: large;
+    margin: 5px 5px 10px 5px;
+    border: 1px solid gray;
+    padding: 10px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    background-color: lightgray;
+}
+
+.userDisp img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 20px;
+} 
+
+#chatDisp #textbox
+{
+    position: absolute;
+    bottom: 0;
+    left:0;
+}
+
+#textBox{
+    height: 50px;
+    width: 98%;
+    background-color: lightgray;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+
+#textBox input{
+    height: 50px;
+    border-radius: 25px;
+    flex-grow: 1;
+    margin-right: 10px;
+}
+
+#textBox button{
+    height: 50px;
+    width: 50px;
+    border-radius: 25px;
+    font-size: larger;
+}
+
+/* FOR CHATBOX PART */
+.chatBox
+{
+    display: flex;
+}
+
+.sender, .receiver 
+{
+    max-width: 50%;
+    background-color: bisque;
+    border-radius: 10px;
+    margin: 5px;
+    padding: 5px;
+    float: left;
+}
+.receiver
+{
+    background-color: blueviolet;
+    display:flexbox;
+    float: right;
+    
+}
+.avatar_place img
+{
+    border-radius: 10px;
+    border-color: black;
+    width: 52px;
+    height: 52px;
+    position: static;
+}
+#message
+{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: large;
+}
+
+.user_name
+{   
+    margin: 5px;
+    margin-left: 0px;
+    font-weight: bold;
+    position:sticky;
+}
