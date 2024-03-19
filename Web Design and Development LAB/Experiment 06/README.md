@@ -22,7 +22,9 @@
 >> >
 >> >Very interactive
 >>
->> Uses <b>XMLHttpRequest</b> object (also called xhr object).
+>> Uses <b>XMLHttpRequest</b> object (also called xhr object), which is an inbuilt object in JavaScript.
+>>
+>> Data can be transferred in any format (html, txt, json, xml) and protocol. 
 >>
 >> 
 >
