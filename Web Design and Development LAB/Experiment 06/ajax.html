@@ -6,6 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AJAX Program</title>
     <style>
+        img{
+            height: 80px;
+            width: 80px;
+            display: flex;
+            justify-content: center;
+        }
         body {
             background-color: burlywood;
         }
@@ -16,9 +22,13 @@
             height: 50px;
             width: 120px;
         }
-        div{
-            /* display: flex;
-            justify-content: center; */
+        div.question {
+            font-weight: bold;
+            color: blueviolet;
+            font-size: x-large;
+        }
+        li{
+            font-size: x-large;
         }
 
     </style>
@@ -32,39 +42,53 @@
         <p>AJAX is a technique for accessing web servers from a web page.</p>
         <p><b>A</b>synchronous <b>J</b>avaScript <b>A</b>nd <b>X</b>ML</p>
     </center>
-
+    <div class="question" id="question-6a">
+        <p style="font-weight: bold; font-family: Georgia;">
+            AJAX program to read the message from text file and update it in the Web page.
+        </p>
+    </div>
     <div id="dynamic">
-        <button type="button" onclick="fetchMe()">Fetch Me</button>
+        <button type="button" onclick="fetchMe()">Fetch Car Details</button>
         <button type="button" onclick="aboutMe()">About Me</button>
     </div>
-
+    
+    <div class="question" id="question-6b">
+        <p style="font-weight: bold; font-family: Georgia;">
+            AJAX program to read the data from JSON file and display in table format on the Web page.
+        </p>
+    </div>
     <div id="jsonWala">
-        <button type="button" onclick="fetchJson()" style="background-color: orangered; color: black; margin-top: 10px;">Fetch Me</button>
+        <button type="button" onclick="fetchJson()" style="background-color: orangered; color: black; margin-top: 10px;">Fetch Mobile Details</button>
         
         <table id="mobiles-table", border="2">
             <thead>
-            <!-- The <thead> element is used to define the header section of a table.  -->
-                <tr>
-                    <th>Model Number</th>
-                    <th>Name</th>
-                    <th>Price</th>
-                    <th>Image</th>
-                </tr>
-            </thead>
-    
-            <tbody>
-                <!-- The <tbody> element is used to define the main content of a table, excluding the header and footer sections. -->
-            </tbody>
-        </table>
-    
-    </div>
-
-    <div id="xmlWala">
-        <button type="button" onclick="fetchXml()" style="background-color: orangered; color: black; margin-top: 10px;">Fetch Me</button>
-    
-    </div>
-
-    <script src="ajax.js">    </script>
-</body>
-
+                <!-- The <thead> element is used to define the header section of a table.  -->
+                    <tr>
+                        <th>Model Number</th>
+                        <th>Name</th>
+                        <th>Price</th>
+                        <th>Image</th>
+                    </tr>
+                </thead>
+                
+                <tbody>
+                    <!-- The <tbody> element is used to define the main content of a table, excluding the header and footer sections. -->
+                    </tbody>
+                </table>
+                
+            </div>
+            
+            <div class="question" id="question-6c">
+                <p style="font-weight: bold; font-family: Georgia;">
+                    AJAX program to read the data from XML file and update it in the Web page.
+                </p>
+            </div>
+            <div id="xmlWala">
+                <button type="button" onclick="fetchXml()" style="background-color: orangered; color: black; margin-top: 10px;">Fetch XML File</button>
+                
+            </div>
+            
+            <script src="ajax.js">    </script>
+        </body>
+        
 </html>
