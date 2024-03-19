@@ -16,7 +16,12 @@
 >>
 >> Benefits:
 >> >No page reload/refresh
+>> >
 >> >Better user experience
+>> >
 >> >Saves network bandwidth (by requesting only the required portion of the website)
+>> >
 >> >Very interactive
+>>
+>> 
 >
