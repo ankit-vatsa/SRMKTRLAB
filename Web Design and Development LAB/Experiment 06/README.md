@@ -22,5 +22,7 @@
 >> >
 >> >Very interactive
 >>
+>> Uses <b>XMLHttpRequest</b> object (also called xhr object).
+>>
 >> 
 >
