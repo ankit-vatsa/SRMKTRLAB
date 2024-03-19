@@ -13,6 +13,7 @@
 >> So, AJAX helps in fetching data asynchronously without interfering with the existing page.
 >>
 >> Modern websites use JSON instead of XML for data transfer.
+>>
 >> Benefits:
 >> >No page reload/refresh -->  Change the content of a specific portion of a webpage fetched from outside server.
 >> >
