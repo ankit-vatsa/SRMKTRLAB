@@ -14,7 +14,7 @@
 >>
 >> Modern websites use JSON instead of XML for data transfer.
 >>
->> Benefits:
+>> <b>Benefits:</b>
 >> >No page reload/refresh -->  Change the content of a specific portion of a webpage fetched from outside server.
 >> >
 >> >Better user experience
