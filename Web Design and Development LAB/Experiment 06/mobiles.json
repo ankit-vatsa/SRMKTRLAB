@@ -1,0 +1,21 @@
+[
+    {
+      "model_number": "1",
+      "name": "iPhone 12",
+      "price": "$799",
+      "image": "iphone12.jpg"
+    },
+    {
+      "model_number": "2",
+      "name": "Samsung Galaxy S21",
+      "price": "$699",
+      "image": "galaxys21.jpg"
+    },
+    {
+      "model_number": "3",
+      "name": "Google Pixel 5",
+      "price": "$699",
+      "image": "pixel5.jpg"
+    }
+  ]
+  

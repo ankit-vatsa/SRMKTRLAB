@@ -1,0 +1,9 @@
+<h1>
+Tata Safari
+</h1>
+
+<h3>
+Hummer
+</h3>
+
+<button onClick="window.location.reload()">Refresh</button>

@@ -1,0 +1,16 @@
+<cars>
+  <car>
+    <id>1</id>
+    <make>Toyota</make>
+    <model>Corolla</model>
+    <year>2022</year>
+    <color>White</color>
+  </car>
+  <car>
+    <id>2</id>
+    <make>Ford</make>
+    <model>Mustang</model>
+    <year>2023</year>
+    <color>Red</color>
+  </car>
+</cars>
