@@ -10,12 +10,11 @@
 >>
 >> Normal programming that we do are synchronous i.e., has blocking calls in it, i.e., until the previous lines are not completed/executed, next lines are not executed.  
 >>
->> Modern websites use JSON instead of XML for data transfer.
->>
 >> So, AJAX helps in fetching data asynchronously without interfering with the existing page.
 >>
+>> Modern websites use JSON instead of XML for data transfer.
 >> Benefits:
->> >No page reload/refresh
+>> >No page reload/refresh -->  Change the content of a specific portion of a webpage fetched from outside server.
 >> >
 >> >Better user experience
 >> >
