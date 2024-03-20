@@ -16,6 +16,8 @@
 > > Right click Experiment07 -> HTML File
 >
 > > Right click Experiment07 -> Class -> Package: com.servlet -> Name: loginServlet
+> 
+> > Right click WEB-INF (/src/main/webapp/WEB-INF) -> xml -> web.xml 
 >
 > > In HTML file -> Click Run On Server -> Manually define a new server -> Apache -> Tomcat v9.0 Server -> Next -> Browse -> Give installation path of the Tomcat Server -> Finish
 >
