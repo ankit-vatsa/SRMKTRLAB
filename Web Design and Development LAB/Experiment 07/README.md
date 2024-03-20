@@ -1,7 +1,7 @@
 > > SERVLET
 > 
 >
-> > Install Eclipse IDE as Java (1st option)
+> > Install Eclipse IDE (2022) as Java (1st option)
 >
 > > Install Java JDK
 >
