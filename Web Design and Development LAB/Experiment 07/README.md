@@ -8,6 +8,10 @@
 > > Install Apache Server
 >
 > > Help -> Eclipse Marketplace -> Search Java and Web -> Install Eclipse Enterprise Java and Web Developer Tools
+> 
+> > Click on Project name -> Java Build Path -> Libraries -> Double click on JRE System Library -> Alternate JRE -> Installed JREs -> Select the Installed JDK -> Apply
+> 
+> > Click on Project name -> Java Build Path -> Libraries ->  Classpath -> Add External JARs -> Select the JAR file -> Apply
 >
 > > Restart the IDE
 >
