@@ -12,6 +12,8 @@
 > > Click on Project name -> Java Build Path -> Libraries -> Double click on JRE System Library -> Alternate JRE -> Installed JREs -> Select the Installed JDK -> Apply
 > 
 > > Click on Project name -> Java Build Path -> Libraries ->  Classpath -> Add External JARs -> Select the JAR file -> Apply
+> 
+> > Click Project name -> Properties -> Project Facet -> Change Java version to 9.
 >
 > > Restart the IDE
 >
