@@ -28,6 +28,8 @@
 > > Right click WEB-INF (/src/main/webapp/WEB-INF) -> xml -> web.xml
 > 
 > > Add "mysql-connector-java-8.0.15.jar" file into apache-tomcat-9.0.16\lib folder i.e., installation path folder of Apache Tomcat server.
+> 
+> > How to create database in MySql? https://www.techrepublic.com/article/how-to-create-tables-and-add-data-to-mysql-database-with-mysql-workbench/
 >
 > > In HTML file -> Click Run On Server -> Manually define a new server -> Apache -> Tomcat v9.0 Server -> Next -> Browse -> Give installation path of the Tomcat Server -> Finish
 >
