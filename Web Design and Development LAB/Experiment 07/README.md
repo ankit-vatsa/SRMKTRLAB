@@ -6,6 +6,8 @@
 > > Install Java JDK
 >
 > > Install Apache Server
+> 
+> > Install MySQL - https://dev.mysql.com/downloads/installer/ , https://www.youtube.com/watch?v=bcrAdegPdAI
 >
 > > Help -> Eclipse Marketplace -> Search Java and Web -> Install Eclipse Enterprise Java and Web Developer Tools
 > 
