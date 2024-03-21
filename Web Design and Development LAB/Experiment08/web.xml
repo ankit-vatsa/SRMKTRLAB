@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<web-app>
+	<servlet>
+		<servlet-name>gradeServlet</servlet-name>
+		<servlet-class>com.servlet.gradeServlet</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>gradeServlet</servlet-name>
+		<url-pattern>/gradeServlet</url-pattern>
+	</servlet-mapping>
+</web-app>
