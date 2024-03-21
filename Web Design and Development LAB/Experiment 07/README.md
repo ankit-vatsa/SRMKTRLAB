@@ -25,7 +25,9 @@
 >
 > > Right click Experiment07 -> Class -> Package: com.servlet -> Name: loginServlet
 > 
-> > Right click WEB-INF (/src/main/webapp/WEB-INF) -> xml -> web.xml 
+> > Right click WEB-INF (/src/main/webapp/WEB-INF) -> xml -> web.xml
+> 
+> > Add "mysql-connector-java-8.0.15.jar" file into apache-tomcat-9.0.16\lib folder i.e., installation path folder of Apache Tomcat server.
 >
 > > In HTML file -> Click Run On Server -> Manually define a new server -> Apache -> Tomcat v9.0 Server -> Next -> Browse -> Give installation path of the Tomcat Server -> Finish
 >
