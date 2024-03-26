@@ -21,6 +21,9 @@ Open Terminal/Windows Powershell.
 Execute following commands:
 
 .\terraform.exe init
+
 .\terraform.exe plan
+
 .\terraform.exe apply
+
 .\terraform.exe destroy
