@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<web-app>
+
+<servlet>
+	<servlet-name>gradeServlet</servlet-name>
+	<servlet-class>com.servlet.gradeServlet</servlet-class>
+</servlet>
+
+<servlet-mapping>
+	<servlet-name>gradeServlet</servlet-name>
+	<url-pattern>/gradeServlet</url-pattern>
+</servlet-mapping>
+
+<servlet>
+	<servlet-name>loginServlet</servlet-name>
+	<servlet-class>com.servlet.loginServlet</servlet-class>
+</servlet>
+
+<servlet-mapping>
+	<servlet-name>loginServlet</servlet-name>
+	<url-pattern>/loginServlet</url-pattern>
+</servlet-mapping>
+
+<servlet>
+	<servlet-name>nameServlet</servlet-name>
+	<servlet-class>com.servlet.nameServlet</servlet-class>
+</servlet>
+
+<servlet-mapping>
+	<servlet-name>nameServlet</servlet-name>
+	<url-pattern>/nameServlet</url-pattern>
+</servlet-mapping>
+
+</web-app>
