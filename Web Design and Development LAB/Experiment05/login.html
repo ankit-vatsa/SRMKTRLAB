@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Login Page</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+    <script>
+        var app = angular.module('loginApp', []);
+        app.controller('loginCtrl', function($scope) {
+            $scope.validateForm = function() {
+                if (!$scope.name || $scope.name.length < 3 || $scope.name.length > 8) {
+                    $scope.errorMsg = "Name must be between 3 and 8 characters.";
+                    return false;
+                }
+                if (!$scope.username || !isValidEmail($scope.username)) {
+                    $scope.errorMsg = "Username must be a valid email.";
+                    return false;
+                }
+                if (!$scope.password || $scope.password.length < 6) {
+                    $scope.errorMsg = "Password must be at least 6 characters.";
+                    return false;
+                }
+                $scope.errorMsg = "";
+                return true;
+            };
+
+            function isValidEmail(email) {
+                var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+                return emailRegex.test(email);
+            }
+        });
+    </script>
+</head>
+<body ng-app="loginApp" ng-controller="loginCtrl">
+    <h2>Login</h2>
+    <form ng-submit="validateForm()">
+        <label>Name:</label><br>
+        <input type="text" ng-model="name" required><br><br>
+        <label>Username (Email):</label><br>
+        <input type="email" ng-model="username" required><br><br>
+        <label>Password:</label><br>
+        <input type="password" ng-model="password" required><br><br>
+        <button type="submit">Login</button>
+    </form>
+    <div style="color: red;">{{errorMsg}}</div>
+</body>
+</html>
