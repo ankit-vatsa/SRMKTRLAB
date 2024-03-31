@@ -1,21 +1,14 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <title>Simple Calculator</title>
-  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
-</head>
-<body ng-app="calculatorApp">
-  <div ng-controller="calculatorCtrl">
+<div ng-controller="calculatorCtrl">
     <h2>Simple Calculator</h2>
     <input type="number" ng-model="num1" placeholder="Enter first number">
     <input type="text" ng-model="operator" placeholder="Enter operator (+, -, *, /)">
     <input type="number" ng-model="num2" placeholder="Enter second number">
     <button ng-click="calculate()">Calculate</button>
     <p ng-if="result !== null">Result: {{ result }}</p>
-  </div>
+</div>
 
-  <script>
-    var app = angular.module('calculatorApp', []);
+<script>
+    var app = angular.module('ankitapp');
     app.controller('calculatorCtrl', function($scope) {
       $scope.num1 = null;
       $scope.num2 = null;
@@ -43,6 +36,4 @@
         }
       };
     });
-  </script>
-</body>
-</html>
+</script>
