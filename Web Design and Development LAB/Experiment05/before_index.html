@@ -1,0 +1,37 @@
+<!-- Simple index.html can be like: -->
+
+<!DOCTYPE html>
+<html lang="en" ng-app="ankitapp">
+
+<head>
+    <title>AngularJs | Single Page Web Application</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular-route.js"></script>
+
+    <script>
+        var app = angular.module("ankitapp", ["ngRoute"]);
+        app.config(function ($routeProvider) {
+            $routeProvider
+                .when("/login",
+                    {
+                        templateUrl: "login.html"
+                    })
+                .when("/registration",
+                    {
+                        templateUrl: "calculator.html"
+                    });
+        });   
+    </script>
+
+</head>
+
+<body>
+    <div>
+        <a href="#!login">Login</a>
+        <a href="#!registration">Calculator</a>
+    </div>
+    <hr>
+    <div ng-view> </div>
+</body>
+
+</html>
