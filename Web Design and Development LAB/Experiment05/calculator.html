@@ -22,6 +22,7 @@
     <script>
         var app = angular.module('calculatorApp', []);
         app.controller('calculatorCtrl', function($scope) {
+            $scope.result = null; // Initialize result variable
             $scope.calculate = function() {
                 switch ($scope.operator) {
                     case '+':
