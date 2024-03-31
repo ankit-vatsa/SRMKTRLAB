@@ -1,63 +1,46 @@
 <!DOCTYPE html>
-<html ng-app="calculatorApp">
+<html>
 <head>
-  <title>Simple Calculator</title>
-  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
-  <link rel="stylesheet" href="style.css">  </head>
-<body>
-  <div ng-controller="CalculatorCtrl">
-    <input type="text" ng-model="currentNumber" placeholder="0">
-    <br>
-    <button ng-click="appendNumber(number)"> {{number}} </button>
-    <button ng-click="appendNumber('.')"> . </button>
-    <button ng-click="appendOperator(operator)"> {{operator}} </button>
-    <br>
-    <button ng-click="appendNumber(number)"> {{number}} </button>
-    <button ng-click="appendNumber('.')"> . </button>
-    <button ng-click="operate()"> = </button>
-    <br>
-    <p>{{result}}</p>
-  </div>
-  
-  <script>
-      var app = angular.module('calculatorApp', []);
+    <title>AngularJS Calculator</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+</head>
+<body ng-app="calculatorApp" ng-controller="calculatorCtrl">
+    <h2>Simple Calculator</h2>
+    <form ng-submit="calculate()">
+        <input type="number" ng-model="num1" placeholder="Enter first number" required><br><br>
+        <select ng-model="operator" required>
+            <option value="+">+</option>
+            <option value="-">-</option>
+            <option value="*">*</option>
+            <option value="/">/</option>
+        </select><br><br>
+        <input type="number" ng-model="num2" placeholder="Enter second number" required><br><br>
+        <button type="submit">Calculate</button>
+    </form>
+    <p>Result: {{result}}</p>
 
-app.controller('CalculatorCtrl', function($scope) {
-  $scope.currentNumber = "0";
-  $scope.previousNumber = null;
-  $scope.operator = null;
-  $scope.result = null;
-
-  $scope.appendNumber = function(number) {
-    $scope.currentNumber = $scope.currentNumber === "0" ? number : $scope.currentNumber + number;
-  };
-
-  $scope.appendOperator = function(operator) {
-    $scope.previousNumber = parseFloat($scope.currentNumber);
-    $scope.operator = operator;
-    $scope.currentNumber = "0";
-  };
-
-  $scope.operate = function() {
-    var currentNumber = parseFloat($scope.currentNumber);
-    if ($scope.operator === "+") {
-      $scope.result = $scope.previousNumber + currentNumber;
-    } else if ($scope.operator === "-") {
-      $scope.result = $scope.previousNumber - currentNumber;
-    } else if ($scope.operator === "*") {
-      $scope.result = $scope.previousNumber * currentNumber;
-    } else if ($scope.operator === "/") {
-      if (currentNumber === 0) {
-        $scope.result = "Error: Division by zero";
-      } else {
-        $scope.result = $scope.previousNumber / currentNumber;
-      }
-    }
-    $scope.previousNumber = null;
-    $scope.operator = null;
-    $scope.currentNumber = $scope.result;
-  };
-});
-  </script>
+    <script>
+        var app = angular.module('calculatorApp', []);
+        app.controller('calculatorCtrl', function($scope) {
+            $scope.calculate = function() {
+                switch ($scope.operator) {
+                    case '+':
+                        $scope.result = $scope.num1 + $scope.num2;
+                        break;
+                    case '-':
+                        $scope.result = $scope.num1 - $scope.num2;
+                        break;
+                    case '*':
+                        $scope.result = $scope.num1 * $scope.num2;
+                        break;
+                    case '/':
+                        $scope.result = $scope.num1 / $scope.num2;
+                        break;
+                    default:
+                        $scope.result = null;
+                }
+            };
+        });
+    </script>
 </body>
 </html>
