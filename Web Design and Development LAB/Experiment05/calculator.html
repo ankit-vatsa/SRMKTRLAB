@@ -6,34 +6,3 @@
     <button ng-click="calculate()">Calculate</button>
     <p ng-if="result !== null">Result: {{ result }}</p>
 </div>
-
-<script>
-    var app = angular.module('ankitapp');
-    app.controller('calculatorCtrl', function($scope) {
-      $scope.num1 = null;
-      $scope.num2 = null;
-      $scope.operator = '';
-      $scope.result = null;
-
-      $scope.calculate = function() {
-        if ($scope.num1 !== null && $scope.num2 !== null && $scope.operator !== '') {
-          switch ($scope.operator) {
-            case '+':
-              $scope.result = $scope.num1 + $scope.num2;
-              break;
-            case '-':
-              $scope.result = $scope.num1 - $scope.num2;
-              break;
-            case '*':
-              $scope.result = $scope.num1 * $scope.num2;
-              break;
-            case '/':
-              $scope.result = $scope.num1 / $scope.num2;
-              break;
-            default:
-              $scope.result = null;
-          }
-        }
-      };
-    });
-</script>
