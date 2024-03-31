@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Registration form</title>
+</head>
+<body>
+	<p> To register, enter your details in the following form. </p>
+    <p style="color: red;text-align: right;">Fields marked with * are mandatory.</p>
+    <div class="form" >
+
+    <form method="post" action="registerServlet">
+        <table border="1" style="border-radius: 2.5%; border-color: violet; border-width: 5px;">
+            <tr align="center";>
+                <td>
+                    <br><label for="studentName">Student Name:</label>
+                </td>
+                <td>
+                    <input type="text" name="studentName">
+                </td>
+            </tr>
+            
+            <tr align="center";>
+                <td>                    
+                    <label for="fatherName">Father's Name:</label>
+                </td>
+                <td>                    
+                    <input type="text" name="fatherName">
+                </td>
+            </tr>
+            <tr align="center";>
+                <td>                    
+                    <label for="motherName">Mother's Name: </label>
+                </td>
+                <td>                    
+                    <input type="text" name="motherName">
+                </td>
+            </tr>
+            <tr align="center";>
+                <td>                    
+                    <label for="dob">Date of Birth</label>
+                </td>
+                <td>                    
+                    <input type="date" name="dob">
+                </td>
+            </tr>
+            <tr align="center";>
+                <td>                    
+                    <br><label for="email">Email:</label>
+                </td>
+                <td>                    
+                    <input type="text" name="email">
+                </td>
+            </tr>
+            <tr align="center";>
+                <td>                    
+                    <br><label for="mobile">Mobile:</label>
+                </td>
+                <td>                    
+                    <input type="text" name="mobile">
+                </td>
+            </tr>
+            <tr align="center";>
+                <td>                    
+                    <br><label for="level">Level:</label>
+                </td>
+                <td>                 
+                	<input type="text" name="level">   
+                    <select name="lev" id="level">
+                        <option value="High-School">High-School</option>
+                        <option value="Primary">Primary</option>
+                        <option value="College">College</option>
+                        <option value="Uneducated">Uneducated</option>
+                    </select>
+                </td>
+            </tr>
+            <tr align="center";>
+                <td>                    
+                    <br><label for="department">Department:</label>
+                </td>
+                <td>         
+                	<input type="text" name="department">
+                	           
+                    <select name="depar" id="department">
+                        <option value="Electronics">Electronics</option>
+                        <option value="CSE">CSE</option>
+                        <option value="Mechanical">Mechanical</option>
+                        <option value="Biotech">Biotech</option>
+                    </select>
+                </td>
+            </tr>
+            <tr align="center";>
+                <td>                    
+                    <br><label for="mobile">Mobile:</label>
+                </td>
+                <td>                    
+                    <input type="text" name="mobile">
+                </td>
+            </tr>
+            
+            <tr align="center";>
+                <td>
+                    Submit:
+                </td>
+                <td>
+                    <center ><input type="submit"></center>
+                </td>
+            </tr>
+        </table>
+        </form>
+    </div>
+</body>
+</html>
