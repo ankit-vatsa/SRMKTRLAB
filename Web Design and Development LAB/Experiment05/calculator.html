@@ -1,41 +1,48 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>AngularJS Calculator</title>
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+  <title>Simple Calculator</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
 </head>
-<body>
-    <div ng-app="calculatorApp" ng-controller="calculatorCtrl">
-        <h1>AngularJS Calculator</h1>
-        <input type="number" ng-model="num1" placeholder="Enter first number"><br><br>
-        <input type="number" ng-model="num2" placeholder="Enter second number"><br><br>
-        <button ng-click="add()">Add</button>
-        <button ng-click="subtract()">Subtract</button>
-        <button ng-click="multiply()">Multiply</button>
-        <button ng-click="divide()">Divide</button><br><br>
-        <p>Result: {{result}}</p>
-    </div>
+<body ng-app="calculatorApp">
+  <div ng-controller="calculatorCtrl">
+    <h2>Simple Calculator</h2>
+    <input type="number" ng-model="num1" placeholder="Enter first number">
+    <input type="text" ng-model="operator" placeholder="Enter operator (+, -, *, /)">
+    <input type="number" ng-model="num2" placeholder="Enter second number">
+    <button ng-click="calculate()">Calculate</button>
+    <p ng-if="result !== null">Result: {{ result }}</p>
+  </div>
 
-    <script>
-        var app = angular.module('calculatorApp', []);
+  <script>
+    var app = angular.module('calculatorApp', []);
+    app.controller('calculatorCtrl', function($scope) {
+      $scope.num1 = null;
+      $scope.num2 = null;
+      $scope.operator = '';
+      $scope.result = null;
 
-        app.controller('calculatorCtrl', function ($scope) {
-            $scope.add = function () {
-                $scope.result = $scope.num1 + $scope.num2;
-            };
-
-            $scope.subtract = function () {
-                $scope.result = $scope.num1 - $scope.num2;
-            };
-
-            $scope.multiply = function () {
-                $scope.result = $scope.num1 * $scope.num2;
-            };
-
-            $scope.divide = function () {
-                $scope.result = $scope.num1 / $scope.num2;
-            };
-        });
-    </script>
+      $scope.calculate = function() {
+        if ($scope.num1 !== null && $scope.num2 !== null && $scope.operator !== '') {
+          switch ($scope.operator) {
+            case '+':
+              $scope.result = $scope.num1 + $scope.num2;
+              break;
+            case '-':
+              $scope.result = $scope.num1 - $scope.num2;
+              break;
+            case '*':
+              $scope.result = $scope.num1 * $scope.num2;
+              break;
+            case '/':
+              $scope.result = $scope.num1 / $scope.num2;
+              break;
+            default:
+              $scope.result = null;
+          }
+        }
+      };
+    });
+  </script>
 </body>
 </html>
