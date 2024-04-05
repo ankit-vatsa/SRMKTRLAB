@@ -1,4 +1,5 @@
 > INPUT
+
 // input is from a file named inputslr.txt
 // use e for epsilon
 // no white spaces
@@ -6,6 +7,7 @@ E->BB
 B->cB|d
 
 > OUTPUT
+
 Grammar:
 E->BB
 B->cB|d
