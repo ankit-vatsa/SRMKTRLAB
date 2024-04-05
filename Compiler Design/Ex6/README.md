@@ -12,26 +12,26 @@ B->cB|d
 
 > OUTPUT
 
-Grammar:
+>> Grammar:
 
 E->BB
 
 B->cB|d
  
-FIRST:
+>> FIRST:
 
 B = {c,d}
 
 E = {c,d}
  
-FOLLOW:
+>> FOLLOW:
 
 B = {$,c,d}
 
 E = {$}
  
 
-Productions:
+>> Productions:
 
 r1: B->cB
 
@@ -39,7 +39,7 @@ r2: B->d
 
 r3: E->BB
  
-Graph:
+>> Graph:
  
 I0:
 
@@ -76,7 +76,7 @@ I6:
 
 E->BB.
  
-Edges:
+>> Edges:
 
 I0 -> E -> I1
 
@@ -98,7 +98,7 @@ I5 -> d -> I3
 
 I5 -> B -> I6
 
-Parsing Table:
+>> Parsing Table:
 
 St.             Action & Goto
 
