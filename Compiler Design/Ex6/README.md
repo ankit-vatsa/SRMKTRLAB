@@ -1,3 +1,5 @@
+https://japp.io/compiler-design/slr-parse-table-from-cfg-grammar-program-in-c-c/
+
 > INPUT
 
 // input is from a file named inputslr.txt
