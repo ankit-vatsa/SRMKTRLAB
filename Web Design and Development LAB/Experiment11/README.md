@@ -31,4 +31,18 @@
 
 <a href="application.properties">application.properties</a>
 
+> >
+**To test the API:**
+
+> > GET method
+> > http://localhost:8090/index
 > > 
+> > Parameters:
+> > 
+> > a  5
+> > 
+> > b  6
+> 
+OR
+
+> > http://localhost:8090/index?a=5&b=15
