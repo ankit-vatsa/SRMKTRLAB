@@ -16,7 +16,7 @@
   - Right click on **src/main/java** -> New -> Package ->  **com.example.ankit.controller**
   - Right click  on the package "**com.example.ankit.controller**" -> New -> Class -> Name : **ankitController**
   - Similarly, make a package **com.example.ankit.service** -> Create a class -> Name: **ankitService**
-  - 
+    
 > Contents of the files:
 
 > > ankitController.java
