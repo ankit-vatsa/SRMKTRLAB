@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-route.js"></script>
+		<script src="https://cdn.socket.io/4.3.2/socket.io.min.js"></script>
+		<base href="/">
+	<style>
+body {
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+	  background-color: burlywood;
+    }
+    header {
+      background-color: #8f0a00;
+      color: white;
+      padding: 10px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .navbar {
+		display: flex;
+		gap: 20px;
+    }
+    .navbar a {
+		color: white;
+		text-decoration: none;
+    }
+    main {
+		flex-grow: 1;
+		padding: 20px;
+    }
+    footer {
+		/* background-color: #333; */
+		background-color: #8f0a00;
+		color: white;
+      text-align: center;
+      padding: 10px 0;
+      width: 100%;
+    }
+	img{
+		justify-content: center;
+	}
+	</style>
+
+<script>
+  window.watsonAssistantChatOptions = {
+    integrationID: "61c4d6e6-6a8c-46e9-ab37-dceb6c5c18ee", // The ID of this integration.
+    region: "au-syd", // The region your integration is hosted in.
+    serviceInstanceID: "6b06cf86-4157-4c81-89df-39a82def2e72", // The ID of your service instance.
+    onLoad: async (instance) => { await instance.render(); }
+  };
+  setTimeout(function(){
+    const t=document.createElement('script');
+    t.src="https://web-chat.global.assistant.watson.appdomain.cloud/versions/" + (window.watsonAssistantChatOptions.clientVersion || 'latest') + "/WatsonAssistantChatEntry.js";
+    document.head.appendChild(t);
+  });
+</script>
+
+	</head>
+
+
+<body ng-app="myApp">
+	<header>
+		<h1>Welcome to NandAnk Peer to Peer</h1>
+		<nav class="navbar">
+		  <a href="/index">Home</a>
+		  <a href="/about">About</a>
+		  <a href="/register">Register</a>
+		  <a href="/login">Login</a>
+		  <a href="/chat">Chat</a>
+		</nav>
+	  </header>
+	  <main>
+		<div ng-view> </div>
+		<!-- Add your central page content here -->
+	  </main>
+	  <footer>
+		<p>&copy; 2024 Nandavardhan-Ankit. All Rights Reserved.</p>
+	  </footer>
+	<script src="script.js"></script>
+
+</body>
+
+</html>

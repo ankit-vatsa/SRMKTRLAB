@@ -1,0 +1,97 @@
+body{
+    margin: 0;
+}
+
+.container{
+    height: 100vh;
+    font-family: sans-serif;
+}
+
+#userList{
+    width: 30%;
+    height: 100%;
+    background-color: whitesmoke;
+    float: left;
+    overflow-y: scroll
+}
+
+.userDisp{
+    font-size: large;
+    margin: 5px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.userDisp img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+#textBox{
+    height: 50px;
+    /* background-color: lightgray; */
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+
+#textbox{
+    height: 50px;
+    border-radius: 25px;
+    flex-grow: 1;
+    margin-right: 10px;
+    background-color: rgb(241, 241, 241);
+    border-style: none;
+}
+
+#textboxButton{
+    height: 50px;
+    width: 50px;
+    margin-right: 10px;
+    border-radius: 25px;
+    border-style: none;
+    background-color: rgb(66, 165, 245);
+    color: white;
+    font-size: larger;
+}
+
+#chatDisp{
+    width: 70%;
+    height: 100%;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+#msgDisp{
+    height: 100%;
+    overflow-y: scroll;
+    display: block;
+}
+
+#chatMsg{
+    padding: 13px 7px;
+    max-width: 40%;
+}
+
+#chatMsgWrapper{
+    display: flex;
+    flex-direction: column;
+}
+
+.user-msg{
+    margin: 10px 10px 10px auto;
+    border-radius: 20px 20px 3px 20px;
+    color: white;
+    background-color: rgb(66, 165, 245);    
+}
+
+.recipient-msg{
+    margin: 10px auto 10px 10px;
+    border-radius: 20px 20px 20px 3px;
+    background-color: rgb(241, 241, 241);
+}
+

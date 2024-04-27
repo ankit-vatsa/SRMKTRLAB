@@ -1,0 +1,36 @@
+<html>
+    <head>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-route.js"></script>
+        <script src="https://cdn.socket.io/4.3.2/socket.io.min.js"></script>
+        <link rel="stylesheet" href="style.css">
+        <!-- <base href="/"> -->
+    </head>
+    <body ng-app = "myApp">
+        <div class="container" ng-controller="chatCtrl">
+            <div id="userList">
+                <div ng-repeat = "user in users"  ng-click="changeUser(user.username)">           
+                    <div class="userDisp">
+                        <img ng-src="{{user.avatar}}">
+                        <span>{{user.username}}</span>
+                    </div>
+                    <hr>
+                </div>
+            </div>
+            <div id = "chatDisp">
+                <h1 id="usernameDisp">{{clickedUser}}</h1>
+                <div id = "msgDisp">
+                    <div ng-repeat="message in messages">
+                        <div id = "chatMsgWrapper">
+                            <span id = "chatMsg" ng-class="message.direction">{{message.text}}</span>
+                        </div>
+                    </div>
+                </div>
+                <div id="textBox">
+                    <input type="text" id="textbox" ng-model="msgTextbox">
+                    <button id="textboxButton" ng-click="sendMsg()">></button>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
