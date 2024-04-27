@@ -1,0 +1,11 @@
+{
+  "devDependencies": {
+    "@types/angular": "^1.8.9"
+  },
+  "dependencies": {
+    "express": "^4.19.2",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.3.1",
+    "socketio": "^1.0.0"
+  }
+}
