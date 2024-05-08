@@ -51,11 +51,15 @@ resource "aws_sns_topic" "devops-ex-8" {
 Open Terminal/Windows Powershell.
 
 Execute following commands:
-
+```
 .\terraform.exe init
-
+```
+```
 .\terraform.exe plan
-
+```
+```
 .\terraform.exe apply
-
+```
+```
 .\terraform.exe destroy
+```
