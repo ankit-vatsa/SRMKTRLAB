@@ -27,6 +27,17 @@ resource "aws_instance" "devops-ex-7" {
   instance_type = "t2.micro"
 }
 ```
+- Provider based S3 bucket
+```
+provider "aws" {
+  region = "us-east-1"
+}
+
+resource "aws_s3_bucket" "my_bucket" {
+  bucket_prefix = "my-bucket-prefix"
+}
+
+```
 - Provider based
 ```
 provider "aws" {
