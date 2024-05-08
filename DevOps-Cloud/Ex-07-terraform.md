@@ -9,13 +9,33 @@ Configure AWS CLI
 
 Extract terraform zip file, locally.
 
-Save as main.tf file locally at the same location as terraform.exe:
-
+- Save as main.tf file locally at the same location as terraform.exe:
+```
 module "ec2-instance" {
   source  = "terraform-aws-modules/ec2-instance/aws"
   version = "5.0.0"
 }
+```
+```
+provider "aws" {
+  region = "us-east-1"
+}
 
+resource "aws_instance" "devops-ex-7" {
+  ami           = "ami-0f403e3180720dd7e"
+  instance_type = "t2.micro"
+}
+```
+-Provider based
+```
+provider "aws" {
+  region = "us-east-1"
+}
+
+resource "aws_sns_topic" "devops-ex-8" {
+  name = "devops-ex-8"
+}
+```
 Open Terminal/Windows Powershell.
 
 Execute following commands:
