@@ -16,6 +16,7 @@ module "ec2-instance" {
   version = "5.0.0"
 }
 ```
+- Provider based EC2 instance
 ```
 provider "aws" {
   region = "us-east-1"
