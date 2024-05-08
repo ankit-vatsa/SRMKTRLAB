@@ -26,7 +26,7 @@ resource "aws_instance" "devops-ex-7" {
   instance_type = "t2.micro"
 }
 ```
--Provider based
+- Provider based
 ```
 provider "aws" {
   region = "us-east-1"
