@@ -61,5 +61,8 @@ COPY index.html /usr/share/nginx/html
 ```
 - Run the command in the cmd:
 ```
+docker build -t my-nginx .
+```
+```
  docker run -p 8090:80 -v /pathto/custom/directory:/usr/share/nginx/html nginx
 ```
