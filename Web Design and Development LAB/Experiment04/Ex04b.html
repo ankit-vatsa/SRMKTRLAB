@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ankit Website</title>
+    <script type="text/javascript">
+        function validation() {
+            let name = document.meraform.name.value
+            let empno= document.meraform.empno.value 
+            let basic= parseFloat(document.meraform.basicsalary.value)
+            let hra= basic*0.4
+            let da= basic*0.6
+            let gross= basic+hra+da
+            let pf= basic*0.13
+            let tax= basic*0.20
+            let deduction= pf+tax
+
+            document.meraform.hra.value=hra
+            document.meraform.da.value=da
+            document.meraform.gross.value=gross
+            document.meraform.pf.value=pf
+            document.meraform.tax.value=tax
+            document.meraform.deduction.value=deduction
+            document.meraform.netsalary.value=gross-deduction
+
+            return false;
+        }
+    </script>
+    <style>
+        body {
+            background-color: burlywood;
+        }
+
+        li {
+            float: left;
+        }
+
+        li a,
+        .dropdown-content a {
+            display: block;
+            padding: 20px 23px 24px 20px;
+            background-color: burlywood;
+            display: block;
+            text-decoration: none;
+        }
+
+        ul {
+            list-style-type: none;
+            background-color: burlywood;
+            overflow: hidden;
+        }
+
+        li a:hover {
+            background-color: peru;
+        }
+
+        li:hover {
+            display: block;
+        }
+
+        .dropdown-content {
+            display: none;
+            z-index: 1;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+
+        }
+
+        h1,
+        h2 {
+            color: rgb(82, 9, 33);
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <ul>
+            <li><a href="">Home</a></li>
+            <li class="dropdown">
+                <a href="http://">Forms</a>
+                <div class="dropdown-content">
+                    <a href="http://">Google Forms</a>
+                    <a href="http://">Survey Forms</a>
+                </div>
+            </li>
+            <li><a href="http://">Contact US</a></li>
+        </ul>
+    </header>
+    <h1>SRMIST Job Portal</h1>
+    <h2>Welcome to SRMIST Job Portal.</h2>
+    <h2>Know your net salary, just by filling your employee name, employee number and basic salary.</h2>
+
+    <form name="meraform" method="post" action="" onsubmit="return validation()">
+        <table border="2">
+            <tr>
+                <td><label for="name">Employee Name:</label></td>
+                <td>
+                    <input type="text" name="name" />
+                </td>
+            </tr>
+            <tr>
+                <td>Employee Number:</td>
+                <td>
+                    <input type="text" name="empno" />
+                    
+                </td>
+            </tr>
+            <tr>
+                <td>Basic Salary</td>
+                <td>
+                    <input type="text" name="basicsalary" />
+                    
+                </td>
+            </tr>
+            <tr>
+                <td>HRA (40% of basic)</td>
+                <td>
+                    <input type="text" name="hra" />
+                    
+                </td>
+            </tr>
+            <tr>
+                <td>DA (60% of basic)</td>
+                <td>
+                    <input type="text" name="da" />
+                </td>
+            </tr>
+            <tr>
+                <td>Gross Salary</td>
+                <td>
+                    <input type="text" name="gross" />
+                </td>
+            </tr>
+            <tr>
+                <td>PF</td>
+                <td>
+                    <input type="text" name="pf" />
+                </td>
+            </tr>
+            <tr>
+                <td>Tax</td>
+                <td>
+                    <input type="text" name="tax" />
+                </td>
+            </tr>
+            <tr>
+                <td>Deduction</td>
+                <td>
+                    <input type="text" name="deduction" />
+                </td>
+            </tr>
+            <tr>
+                <td>Net Salary</td>
+                <td>
+                    <input type="text" name="netsalary" />
+                </td>
+            </tr>
+            <tr center>
+                <td colspan="2">
+                    <input type="submit" name="submit" value="Submit" onclick="validation()">
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+
+</html>
