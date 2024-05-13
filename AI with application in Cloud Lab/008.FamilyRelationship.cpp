@@ -1,6 +1,5 @@
 #include <iostream>
 #include <string>
-#include <vector>
 
 // Define a Person class to represent individuals
 class Person {
@@ -19,17 +18,16 @@ public:
 };
 
 // Function to find siblings of a person
-std::vector<Person*> findSiblings(Person* person, std::vector<Relationship>& relationships) {
-    std::vector<Person*> siblings;
-    for (const auto& rel : relationships) {
-        if (rel.parent == person) {
-            siblings.push_back(rel.child);
+void findSiblings(Person* person, Relationship* relationships, int numRelationships) {
+    std::cout << "Siblings of " << person->name << ":\n";
+    for (int i = 0; i < numRelationships; ++i) {
+        if (relationships[i].parent == person) {
+            std::cout << relationships[i].child->name << std::endl;
         }
-        else if (rel.child == person) {
-            siblings.push_back(rel.parent);
+        else if (relationships[i].child == person) {
+            std::cout << relationships[i].parent->name << std::endl;
         }
     }
-    return siblings;
 }
 
 int main() {
@@ -40,19 +38,16 @@ int main() {
     Person Alice("Alice", false);
 
     // Define relationships
-    std::vector<Relationship> relationships = {
+    Relationship relationships[] = {
         Relationship(&John, &Bob),
         Relationship(&Mary, &Bob),
         Relationship(&John, &Alice),
         Relationship(&Mary, &Alice)
     };
+    int numRelationships = sizeof(relationships) / sizeof(relationships[0]);
 
     // Find siblings of Bob
-    std::cout << "Siblings of Bob:\n";
-    std::vector<Person*> bobSiblings = findSiblings(&Bob, relationships);
-    for (auto sibling : bobSiblings) {
-        std::cout << sibling->name << std::endl;
-    }
+    findSiblings(&Bob, relationships, numRelationships);
 
     return 0;
 }
