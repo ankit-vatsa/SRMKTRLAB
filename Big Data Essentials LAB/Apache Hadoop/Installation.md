@@ -117,7 +117,8 @@ hdfs namenode -format
 
 <hr>
 
-<p align="center"><b>POSSIBLE ERRORS CAN OCCUR:</b></p>
+> [!CAUTION]
+> <p align="center"><b>POSSIBLE ERRORS AND THEIR SOLUTIONS:</b></p>
 
 
 1. Error: could not open '............\amd64\jvm.cfg'
