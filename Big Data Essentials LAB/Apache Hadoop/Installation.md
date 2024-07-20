@@ -115,7 +115,10 @@ CHECK IF HADOOP IS INSTALLED IN THE SYSTEM USING THE CMD:
 hdfs namenode -format
 ```
 
-POSSIBLE ERRORS CAN OCCUR:
+<hr>
+
+<p align="center"><b>POSSIBLE ERRORS CAN OCCUR:</b></p>
+
 
 1. Error: could not open '............\amd64\jvm.cfg'
 ```
