@@ -33,10 +33,61 @@ Goto -> hadoop directory in C drive -> etc -> hadoop
 > **Files to be edited:**
 
   - coresite.xml
+```
+<configuration>
+  <property>
+    <name>fs.defaulterFS</name>
+    <value>hdfs://localhost:900</value>
+  </property>
+</configuration>
+```
   - hdfs-site.xml
+> replace the path with your installation path
+```
+<configuration>
+  <property>
+    <name>dfs.replication</name>
+    <value>1</value>
+  </property>
+  <property>
+    <name>dfs.namenode.name.dir</name>
+    <value>C:\hadoop-3.4.0\data\namenode</value>
+  </property>
+  <property>
+    <name>dfs.datanode.name.dir</name>
+    <value>C:\hadoop-3.4.0\data\datanode</value>
+  </property>
+</configuration>
+```
   - mapred-site.xml
+```
+<configuration>
+  <property>
+    <name>mapreduce.framework.name</name>
+    <value>yarn</value>
+  </property>
+</configuration>
+```
   - yarn-site.xml
+```
+<configuration>
+  <property>
+    <name>yarn.nodemanager.aux-services</name>
+    <value>mapreduce_shuffle</value>
+  </property>
+
+  <property>
+    <name>yarn.nodemanager.auxservices.mapreduce.shuffle</name>
+    <value>org.apache.hadoop.mapred.shufflehandler</value>
+  </property>
+</configuration>
+```
   - hadoop-env.cmd
+> replace the path with your installation path
+```
+set JAVA_HOME=C:\java\jdk1.8
+```
+
 
 > **Create folders**
 > 
