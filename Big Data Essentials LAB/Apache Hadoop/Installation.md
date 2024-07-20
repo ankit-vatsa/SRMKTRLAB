@@ -114,3 +114,28 @@ CHECK IF HADOOP IS INSTALLED IN THE SYSTEM USING THE CMD:
 ```
 hdfs namenode -format
 ```
+
+POSSIBLE ERRORS CAN OCCUR:
+
+1. Error: could not open '............\amd64\jvm.cfg'
+```
+In the Environment Variables -> System Variables -> Path
+
+Move the current path of Jave 8 to the top OR Remove any older version of JavaPath with ProgramFiles(x86) in the environment variables.  
+```
+2. Error: "Windows can't find winutils.exe"
+```
+Hadoop 3.4.0 and some newer versions do not include winutils.exe in their distributions, primarily because Hadoop traditionally runs on Unix-based systems and the need for winutils.exe has been less emphasized in newer Hadoop versions.
+
+winutils.exe is a utility required by Hadoop to interact with the Windows operating system for various file system operations.
+
+Solution 1:
+
+You can build your own version of winutils.exe from the Hadoop source code. This involves compiling Hadoop code specifically for Windows.
+https://github.com/apache/hadoop
+
+
+Solution 2:
+
+Use any pre-built winutils.exe from reliable and trusted sources. 
+```
