@@ -143,3 +143,9 @@ Solution 2:
 
 Use any pre-built winutils.exe from reliable and trusted sources. 
 ```
+
+<h3>EXTERNAL RESOURCES</h3>
+
+- <a href="https://www.youtube.com/watch?v=GNHF0DZK3xQ">YouTube Video Reference</a>
+- <a href="https://knowledge.informatica.com/s/article/000137592?language=en_US">jvm.cfg error</a>
+- <a href="https://kontext.tech/article/1221/hadoop-3-4-0-winutils-for-windows-10-x64">winutils.exe</a>
