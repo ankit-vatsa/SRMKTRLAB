@@ -17,9 +17,9 @@ https://hadoop.apache.org/releases.html
 <p align="center"><b>PREREQUISITE</b></p>
 
 - Install Java8 and JDK in PC
-- Create a new directory in C drive with name "java"
-- Install Java8 in it.
-- Copy the jdk from C drive Program Files folder into  java folder of C drive that we created
+    - Create a new directory in C drive with name "java"
+    - Install Java8 in it.
+    - Copy the jdk from C drive Program Files folder into  java folder of C drive that we created
 
 
 <p align="center"><b>HADOOP INSTALLATION</b></p>
