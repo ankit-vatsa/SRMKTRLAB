@@ -141,7 +141,8 @@ https://github.com/apache/hadoop
 
 Solution 2:
 
-Use any pre-built winutils.exe from reliable and trusted sources. 
+Use any pre-built winutils.exe from reliable and trusted sources.
+Copy the winutils.exe to the \bin folder of hadoop installation path. 
 ```
 
 <h3>EXTERNAL RESOURCES</h3>
