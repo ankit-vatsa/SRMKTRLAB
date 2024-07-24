@@ -31,7 +31,7 @@ Extract Zip file into C drive
 Goto -> hadoop directory in C drive -> etc -> hadoop
 <hr>
 
-<h3>Files to be edited: </h3>
+<h5>Files to be edited: </h5>
 
   - coresite.xml
 ```
