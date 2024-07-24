@@ -106,7 +106,7 @@ User variable -> New -> Variable : "HADOOP_HOME" value: "path of bin folder insi
 System variable -> Path -> Edit -> New -> "path of bin folder inside hadoop path"
 System variable -> Path -> Edit -> New -> "path of sbin folder inside hadoop path"
 ```
-
+<hr>
 **CHECK IF HADOOP IS INSTALLED IN THE SYSTEM USING THE CMD:**
 
 ```
