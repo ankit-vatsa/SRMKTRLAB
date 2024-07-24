@@ -28,6 +28,8 @@ Download Hadoop files from the website
 
 Extract Zip file into C drive
 
+Goto -> hadoop directory in C drive -> Create a folder "data" -> Inside data folder, create two new folders named "datanode" and "namenode".
+
 Goto -> hadoop directory in C drive -> etc -> hadoop
 <hr>
 
@@ -89,14 +91,9 @@ Goto -> hadoop directory in C drive -> etc -> hadoop
 set JAVA_HOME=C:\java\jdk1.8
 ```
 
-
-> **Create folders**
-> 
-In the hadoop directory in C drive -> Create a folder "data"
-
-Inside data folder, create two new folders named "datanode" and "namenode".
-
 In the hadoop-env.cmd file, paste the path of the JDK kept in the java folder in C drive.
+
+<hr>
 
 <p align="center"><b>SETUP ENVIRONMENT VARIABLES</b></p>
 
