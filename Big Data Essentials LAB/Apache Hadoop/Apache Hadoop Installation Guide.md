@@ -29,8 +29,8 @@ Download Hadoop files from the website
 Extract Zip file into C drive
 
 Goto -> hadoop directory in C drive -> etc -> hadoop
-
-> **Files to be edited:**
+<hr>
+**Files to be edited:**
 
   - coresite.xml
 ```
@@ -101,15 +101,15 @@ In the hadoop-env.cmd file, paste the path of the JDK kept in the java folder in
 
 - USER VARIABLE
 ```
-User variable -> New -> Variable : "HADOOP_HOME" value: "bin folder inside hadoop path"
+User variable -> New -> Variable : "HADOOP_HOME" value: "path of bin folder inside hadoop path"
 ```
 - SYSTEM VARIABLE
 ```
-System variable -> Path -> Edit -> New -> "bin folder inside hadoop path"
-System variable -> Path -> Edit -> New -> "sbin folder inside hadoop path"
+System variable -> Path -> Edit -> New -> "path of bin folder inside hadoop path"
+System variable -> Path -> Edit -> New -> "path of sbin folder inside hadoop path"
 ```
 
-CHECK IF HADOOP IS INSTALLED IN THE SYSTEM USING THE CMD:
+**CHECK IF HADOOP IS INSTALLED IN THE SYSTEM USING THE CMD:**
 
 ```
 hdfs namenode -format
