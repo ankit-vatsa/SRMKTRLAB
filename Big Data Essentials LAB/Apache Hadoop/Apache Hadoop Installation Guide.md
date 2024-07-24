@@ -107,7 +107,8 @@ System variable -> Path -> Edit -> New -> "path of bin folder inside hadoop path
 System variable -> Path -> Edit -> New -> "path of sbin folder inside hadoop path"
 ```
 <hr>
-**CHECK IF HADOOP IS INSTALLED IN THE SYSTEM USING THE CMD:**
+
+<h4>CHECK IF HADOOP IS INSTALLED IN THE SYSTEM USING THE CMD:</h4>
 
 ```
 hdfs namenode -format
